@@ -22,6 +22,7 @@ Code:-
 
 Dockerfile defines a list of commands that Docker uses for setting up the Node.js application environment.
 
+```
 FROM node:10
 
 WORKDIR /Users/reem/Downloads
@@ -35,6 +36,7 @@ COPY . .
 EXPOSE 3000
 
 CMD ["npm", "node index.js"]
+```
 
 1. FROM lets us specify which base image from Docker Hub we want to build from. In our case, we are using the latest version of the official node image.
 2.RUN lets us execute a command, which in our case is to create a new directory.
@@ -48,7 +50,7 @@ CMD ["npm", "node index.js"]
 
 
 On the root of the project directory, we’re gonna create the docker-compose.yml file. Follow version 3 syntax defined by Docker:
-
+```
 version: '3'
 services:
   app:
@@ -64,7 +66,7 @@ services:
     image: mongo
     ports:
      - '27017:27017' 
-
+```
 
 
 
