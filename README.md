@@ -10,7 +10,7 @@ Docker provides lightweight containers to run services in isolation from our inf
 ![Untitled Diagram drawio](https://user-images.githubusercontent.com/92275217/139524264-ebfab49b-27df-4cc0-9f29-a7cf57bf25c6.png)
 
 
-Motivation:-
+# Motivation:-
 
 A Docker Compose environment was created in this project to configure and execute numerous Docker containers in a local environment.
 
@@ -24,7 +24,7 @@ Installation
 
 
 
-Code:-
+# Code:-
 
 Dockerfile defines a list of commands that Docker uses for setting up the Node.js application environment.
 
