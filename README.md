@@ -4,6 +4,9 @@
 
 Docker provides lightweight containers to run services in isolation from our infrastructure so we can deliver software quickly. In our project we used Visual studio code tool, nodejs (JavaScript) Application and Mongodb will be deployed in two docker containers. And also these will then need to be running on same network so that they can communicate with each other.
 
+# MongoDB schema:-
+
+
 Motivation:-
 
 A Docker Compose environment was created in this project to configure and execute numerous Docker containers in a local environment.
