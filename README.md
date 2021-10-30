@@ -9,12 +9,12 @@ Motivation:-
 A Docker Compose environment was created in this project to configure and execute numerous Docker containers in a local environment.
 
 Installation
-1.	npm init // install npm
-2.	npm install express -save //web application framework for Node. js
-3.	npm install mongodb -save //install mongoose library for MongoDB.
-4.	docker-compose up //To start or restart all the services defined in a docker-compose.yml 
-5.  docker-compose stop // To stop running containers but won’t remove them 
-6.  docker-compose down // To Stops containers and removes containers, networks, volumes, and images 
+1.	`npm init ` // install npm
+2.	`npm install express -save `//web application framework for Node. js
+3.	`npm install mongodb -save ` //install mongoose library for MongoDB.
+4.	`docker-compose up ` //To start or restart all the services defined in a docker-compose.yml 
+5.  `docker-compose stop `// To stop running containers but won’t remove them 
+6.  `docker-compose down ` // To Stops containers and removes containers, networks, volumes, and images 
 
 
 
