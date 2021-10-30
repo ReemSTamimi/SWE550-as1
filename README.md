@@ -38,14 +38,18 @@ EXPOSE 3000
 CMD ["npm", "node index.js"]
 ```
 
-1. FROM lets us specify which base image from Docker Hub we want to build from. In our case, we are using the latest version of the official node image.
-2.RUN lets us execute a command, which in our case is to create a new directory.
-3.WORKDIR sets this newly created directory as the working directory for any COPY, RUN and CMD instructions that follow in the Dockerfile.
-4.COPY is pretty straightforward and lets us copy files or a whole directory from a source to a destination. We are going to COPY the package.json file over to our working directory.
-5.RUN lets us execute the npm install command which will download all the dependencies defined in package.json.
-6.COPY lets us copy our entire local directory into our working directory to bundle our application source code.
-7.EXPOSE exposes a port which the container will listen on.
-8.And finally, CMD sets the default command to execute our container.
+
+| ------------- |
+| FROM lets us specify which base image from Docker Hub we want to build from. In our case, we are using the latest version of the official node image.      | 
+| RUN lets us execute a command, which in our case is to create a new directory.     |
+| WORKDIR sets this newly created directory as the working directory for any COPY, RUN and CMD instructions that follow in the Dockerfile. | 
+| COPY is pretty straightforward and lets us copy files or a whole directory from a source to a destination. We are going to COPY the package.json file over to our working directory. | 
+| RUN lets us execute the npm install command which will download all the dependencies defined in package.json. | 
+| COPY lets us copy our entire local directory into our working directory to bundle our application source code. | 
+| EXPOSE exposes a port which the container will listen on. | 
+| And finally, CMD sets the default command to execute our container. | 
+
+
 
 
 
