@@ -38,7 +38,7 @@ EXPOSE 3000
 CMD ["npm", "node index.js"]
 ```
 
-
+| DockerFile |
 | ------------- |
 | FROM lets us specify which base image from Docker Hub we want to build from. In our case, we are using the latest version of the official node image.      | 
 | RUN lets us execute a command, which in our case is to create a new directory.     |
